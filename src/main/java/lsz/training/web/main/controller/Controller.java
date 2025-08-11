@@ -9,11 +9,11 @@ import java.util.concurrent.atomic.AtomicLong;
 @RestController
 public class Controller {
 
-    private static final String template = "Hello, %s!";
+    private static final String template = "Main application, %s!";
     private final AtomicLong counter = new AtomicLong();
 
     @GetMapping("/main")
-    public Main main(@RequestParam(defaultValue = "World") String name) {
+    public Main main(@RequestParam(defaultValue = "You can start") String name) {
         return new Main(counter.incrementAndGet(), String.format(template, name));
     }
 }
