@@ -1,7 +1,7 @@
 # Usage:
 #
 # Construir la imagen
-#
+# docker build -t springboot-main-java21:1.0 .
 #
 # Ejecutar el contenedor
 # docker run -d -p 8080:8080 --name WebmainApplication springboot-main-java21
